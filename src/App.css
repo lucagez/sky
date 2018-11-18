@@ -1,0 +1,16 @@
+#App {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #4B666B;
+  padding: 10px 60px;
+  border-radius: 7px;
+  color: #2F3939;
+}
