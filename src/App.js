@@ -18,7 +18,6 @@ class App extends Component {
       how: e.target.attributes.how.value,
       background: e.target.attributes.background.value,
     });
-    this.forceUpdate();
   }
   render() {
     const { mode, background, how } = this.state;
@@ -75,16 +74,20 @@ class App extends Component {
         8: 'http://www.reactiongifs.com/wp-content/uploads/2013/04/tip-hat.gif',
         9: 'http://0.media.collegehumor.cvcdn.com/82/38/32771b4d97dd7d087187ec99e4f443e1-tina-fey-self-five.gif',
         10: 'https://media0.giphy.com/media/vnnoqBjIrJ73y/200.gif',
+      },
+      403: {
+        0: 'https://image.flaticon.com/icons/svg/1244/1244031.svg',
       }
     }
     return (
       <div className="App">
         <div className="title">
           <h1>Sky</h1>
-          <button how={35} background={'#FCFAF9'} value={'gif'} onClick={this.handleClick}>gif</button>
-          <button how={100} background={'#FCFAF9'} value={'404'} onClick={this.handleClick}>404</button>
-          <button how={20} background={'#FCFAF9'} value={'animals'} onClick={this.handleClick}>animals</button>
-          <button how={50} background={'#2F3939'} value={'space'} onClick={this.handleClick}>space</button>
+          <button how={35} background={'#FCFAF9'} value={'gif'} onClick={this.handleClick}>gif 🤣</button>
+          <button how={100} background={'#FCFAF9'} value={'404'} onClick={this.handleClick}>404 💩</button>
+          <button how={20} background={'#FCFAF9'} value={'animals'} onClick={this.handleClick}>animals 🦋</button>
+          <button how={50} background={'#2F3939'} value={'space'} onClick={this.handleClick}>space 🚀</button>
+          <button how={50} background={'#2F3939'} value={'403'} onClick={this.handleClick}>403 🛑</button>
         </div>
         <Sky
           images={modes[mode]}
