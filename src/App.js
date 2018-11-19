@@ -1,3 +1,5 @@
+// TODO: publish to npm
+
 import React, { Component } from 'react';
 import Sky from './components/sky/sky';
 import './App.css';
@@ -83,12 +85,14 @@ class App extends Component {
       <div className="App">
         <div className="title">
           <h1>Sky</h1>
+          // ! wrap emojis in span?
           <button how={35} background={'#FCFAF9'} value={'gif'} onClick={this.handleClick}>gif 🤣</button>
           <button how={100} background={'#FCFAF9'} value={'404'} onClick={this.handleClick}>404 💩</button>
           <button how={20} background={'#FCFAF9'} value={'animals'} onClick={this.handleClick}>animals 🦋</button>
           <button how={50} background={'#2F3939'} value={'space'} onClick={this.handleClick}>space 🚀</button>
           <button how={50} background={'#2F3939'} value={'403'} onClick={this.handleClick}>403 🛑</button>
         </div>
+        // ! add useful way to update number of nodes
         <Sky
           images={modes[mode]}
           how={how}
