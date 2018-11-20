@@ -5,13 +5,14 @@ class Sky extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      moves: []
+      moves: [],
     }
     this.movement = this.movement.bind(this);
   }
+
   componentDidMount() {
-    const temp_moves = [];
     const many = this.props.how;
+    const temp_moves = [];
     for (let i = 0; i < many; i++) {
       temp_moves.push(this.movement());
     }

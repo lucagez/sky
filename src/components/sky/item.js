@@ -10,7 +10,7 @@ class Item extends React.Component {
     }
     this.setStyle = this.setStyle.bind(this);
   }
-
+  
   componentDidMount() {
     setTimeout(this.setStyle, 1);
   }
