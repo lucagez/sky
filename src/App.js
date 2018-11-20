@@ -132,6 +132,9 @@ class App extends Component {
         12: 'https://image.flaticon.com/icons/svg/174/174844.svg',
         13: 'https://image.flaticon.com/icons/svg/174/174865.svg',
         14: 'https://image.flaticon.com/icons/svg/174/174874.svg',
+      },
+      react: {
+        0: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png',
       }
     }
     return (
@@ -152,6 +155,7 @@ class App extends Component {
           <button how={50} background={'#2F3939'} value={'tech'} onClick={this.handleClick}>tech 💻</button>
           <button how={50} background={'#2F3939'} value={'autumn'} onClick={this.handleClick}>autumn 🍁</button>
           <button how={50} background={'#2F3939'} value={'social'} onClick={this.handleClick}>social 🤳</button>
+          <button how={50} background={'#2F3939'} value={'react'} onClick={this.handleClick}>React 😍</button>
         </div>
         <Sky
           images={modes[mode]}

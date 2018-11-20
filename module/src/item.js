@@ -24,6 +24,10 @@ class Item extends React.Component {
       zIndex: '-1',
       transform: movingStyle,
       transition: `transform ${time}s ease-out`,
+      msTransform: movingStyle,
+      msTransition: `transform ${time}s ease-out`,
+      webkitransform: movingStyle,
+      webkitTransition: `transform ${time}s ease-out`,
       overflow: 'visible',
       willChange: 'transform',
     }

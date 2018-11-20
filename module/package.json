@@ -1,9 +1,20 @@
 {
     "name": "react-sky",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "React sky component for fun backgrounds",
     "main": "./lib/Sky.js",
+    "author": {
+        "name": "Luca Gesmundo",
+        "email": "lucagesmundo@yahoo.it",
+        "url": "https://codepen.io/lucagez"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lucagez/sky/tree/master/module"
+    },
     "license": "MIT",
+    "keywords": ["react", "react component", "interactive background", "background"],
+    "homepage": "https://github.com/lucagez/sky",
     "scripts": {
         "build": "webpack",
         "start:dev": "webpack-dev-server"

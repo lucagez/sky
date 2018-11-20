@@ -17,13 +17,17 @@ class Item extends React.Component {
 
   setStyle() {
     const movingStyle = `translate(${Math.random() * window.innerHeight * 2}px, ${Math.random() * window.innerWidth * 2}px) rotate(${Math.random() * 360}deg)`;
-    const time = this.props.time ? this.props.time : 10;
+    const time = this.props.time ? this.props.time : 20;
     const size = this.props.size ? this.props.size : '150px';
     const style = {
       position: 'absolute',
       zIndex: '-1',
       transform: movingStyle,
       transition: `transform ${time}s ease-out`,
+      msTransform: movingStyle,
+      msTransition: `transform ${time}s ease-out`,
+      webkitransform: movingStyle,
+      webkitTransition: `transform ${time}s ease-out`,
       overflow: 'visible',
       willChange: 'transform',
     }
