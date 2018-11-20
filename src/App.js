@@ -1,5 +1,3 @@
-// TODO: publish to npm
-
 import React, { Component } from 'react';
 import Sky from './components/sky/sky';
 import './App.css';
