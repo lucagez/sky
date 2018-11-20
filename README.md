@@ -33,7 +33,7 @@ class App extends Component {
         <Sky 
           images={{
             /* FORMAT AS FOLLOWS */
-            0: "https://linkToYourImage0,  /* You can pass as much images as you want */
+            0: "https://linkToYourImage0",  /* You can pass as much images as you want */
             1: "https://linkToYourImage1",
             2: myImage /* you can pass images in any form: link, imported via webpack.. */
             /* 3: your other image.. */
