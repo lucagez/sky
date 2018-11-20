@@ -6,7 +6,7 @@ React component for interactive backgrounds
 
 ## Demo
 
-link to codepen
+https://codepen.io/lucagez/full/oQoRyK/
 
 ## Installation
 
@@ -41,10 +41,10 @@ class App extends Component {
             /* 5: your other image.. */
             /* ... */
           }}
-          how={130} /* You have to pass a number so Sky will render that amount of images chosen randomly from the object you passed in the previous step */
-          time={40} /* time of the animation. Dfaults at 20s */
-          size={'100px'} /* size of the rendered images. Defaults at 150px */
-          background={'palettedvioletred'} /* color of background. Defaults to none */
+          how={130} /* Pass the number of images Sky will render chosing randomly */
+          time={40} /* time of animation */
+          size={'100px'} /* size of the rendered images */
+          background={'palettedvioletred'} /* color of background */
         />
       </div>
     );
