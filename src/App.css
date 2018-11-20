@@ -11,14 +11,16 @@
   transform: translate(-50%, -50%);
   min-width: 250px;
   max-width: 25%;
+  background: #7EA8BE;
+  border-radius: 7px;
+  padding: 10px;
 }
 
 .title h1 {
-  background: #4B666B;
   padding: 30px 60px;
   text-align: center;
   border-radius: 7px;
-  color: #FCFAF9;
+  color: #4B666B;
 }
 
 .title button {
@@ -30,4 +32,13 @@
   border: 0;
   border-radius: 7px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    background: none;
+  }
+  .title h1 {
+    background: #7EA8BE;
+  }
 }

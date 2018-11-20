@@ -8,7 +8,7 @@ class App extends Component {
     this.state = {
       mode: 'space',
       background: '#2F3939',
-      how: 65,
+      how: 200,
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -83,19 +83,72 @@ class App extends Component {
       },
       503: {
         0: 'https://image.flaticon.com/icons/svg/1234/1234292.svg',
+      },
+      food: {
+        0: 'https://image.flaticon.com/icons/svg/135/135728.svg',
+        1: 'https://image.flaticon.com/icons/svg/135/135687.svg',
+        2: 'https://image.flaticon.com/icons/svg/135/135715.svg',
+        3: 'https://image.flaticon.com/icons/svg/135/135628.svg',
+        4: 'https://image.flaticon.com/icons/svg/135/135591.svg',
+        5: 'https://image.flaticon.com/icons/svg/135/135702.svg',
+        6: 'https://image.flaticon.com/icons/svg/135/135644.svg',
+        7: 'https://image.flaticon.com/icons/svg/135/135629.svg',
+        8: 'https://image.flaticon.com/icons/svg/135/135630.svg',
+      },
+      tech: {
+        0: 'https://image.flaticon.com/icons/svg/141/141073.svg',
+        1: 'https://image.flaticon.com/icons/svg/141/141070.svg',
+        2: 'https://image.flaticon.com/icons/svg/141/141009.svg',
+        3: 'https://image.flaticon.com/icons/svg/140/140993.svg',
+        4: 'https://image.flaticon.com/icons/svg/141/141106.svg',
+        5: 'https://image.flaticon.com/icons/svg/141/141015.svg',
+        6: 'https://image.flaticon.com/icons/svg/141/141099.svg',
+        7: 'https://image.flaticon.com/icons/svg/141/141008.svg',
+        8: 'https://image.flaticon.com/icons/svg/141/141036.svg',
+      },
+      autumn: {
+        0: 'https://image.flaticon.com/icons/svg/1230/1230864.svg',
+        1: 'https://image.flaticon.com/icons/svg/1230/1230865.svg',
+        2: 'https://image.flaticon.com/icons/svg/1230/1230867.svg',
+        3: 'https://image.flaticon.com/icons/svg/1230/1230868.svg',
+        4: 'https://image.flaticon.com/icons/svg/1230/1230869.svg',
+        5: 'https://image.flaticon.com/icons/svg/1230/1230871.svg',
+        6: 'https://image.flaticon.com/icons/svg/1230/1230882.svg',
+        7: 'https://image.flaticon.com/icons/svg/1230/1230875.svg',
+      },
+      social: {
+        0: 'https://image.flaticon.com/icons/svg/174/174855.svg',
+        1: 'https://image.flaticon.com/icons/svg/174/174848.svg',
+        2: 'https://image.flaticon.com/icons/svg/174/174883.svg',
+        3: 'https://image.flaticon.com/icons/svg/174/174879.svg',
+        4: 'https://image.flaticon.com/icons/svg/174/174857.svg',
+        5: 'https://image.flaticon.com/icons/svg/174/174870.svg',
+        6: 'https://image.flaticon.com/icons/svg/174/174869.svg',
+        7: 'https://image.flaticon.com/icons/svg/174/174872.svg',
+        8: 'https://image.flaticon.com/icons/svg/174/174875.svg',
+        9: 'https://image.flaticon.com/icons/svg/174/174845.svg',
+        10: 'https://image.flaticon.com/icons/svg/174/174837.svg',
+        11: 'https://image.flaticon.com/icons/svg/174/174858.svg',
+        12: 'https://image.flaticon.com/icons/svg/174/174844.svg',
+        13: 'https://image.flaticon.com/icons/svg/174/174865.svg',
+        14: 'https://image.flaticon.com/icons/svg/174/174874.svg',
       }
     }
     return (
       <div className="App">
         <div className="title">
           <h1>Sky</h1>
-          <button how={35} background={'#FCFAF9'} value={'gif'} onClick={this.handleClick}>gif 🤣</button>
-          <button how={100} background={'#FCFAF9'} value={'404'} onClick={this.handleClick}>404 💩</button>
-          <button how={20} background={'#FCFAF9'} value={'animals'} onClick={this.handleClick}>animals 🦋</button>
+          <button how={35} background={'#2F3939'} value={'gif'} onClick={this.handleClick}>gif 🤣</button>
+          <button how={100} background={'#2F3939'} value={'404'} onClick={this.handleClick}>404 💩</button>
+          <button how={20} background={'#2F3939'} value={'animals'} onClick={this.handleClick}>animals 🦋</button>
           <button how={50} background={'#2F3939'} value={'space'} onClick={this.handleClick}>space 🚀</button>
           <button how={50} background={'#2F3939'} value={'403'} onClick={this.handleClick}>403 🛑</button>
           <button how={50} background={'#2F3939'} value={'500'} onClick={this.handleClick}>500 😯</button>
           <button how={50} background={'#2F3939'} value={'503'} onClick={this.handleClick}>503 🤐</button>
+          <button how={50} background={'#2F3939'} value={'food'} onClick={this.handleClick}>food 🥕</button>
+          <button how={50} background={'#2F3939'} value={'tech'} onClick={this.handleClick}>tech 💻</button>
+          <button how={50} background={'#2F3939'} value={'autumn'} onClick={this.handleClick}>autumn 🍁</button>
+          <button how={50} background={'#2F3939'} value={'social'} onClick={this.handleClick}>social 🤳</button>
         </div>
         <Sky
           images={modes[mode]}

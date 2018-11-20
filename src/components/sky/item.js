@@ -10,7 +10,7 @@ class Item extends React.Component {
     }
     this.setStyle = this.setStyle.bind(this);
   }
-  
+
   componentDidMount() {
     setTimeout(this.setStyle, 1);
   }
@@ -24,23 +24,26 @@ class Item extends React.Component {
       zIndex: '-1',
       transform: movingStyle,
       transition: `transform ${time}s ease-out`,
-      width: size,
-      height: size,
       overflow: 'visible',
       willChange: 'transform',
     }
+    const imgSize = {
+      width: size,
+      height: 'auto',
+    }
     this.setState({
-      style: style
+      style: style,
+      size: imgSize,
     });
     setTimeout(this.setStyle, time * 1000);
   }
 
   render() {
-    const style = this.state.style;
+    const { style, size } = this.state;
 
     return (
       <div style={style}>
-        <img srcSet={this.props.what} alt="lol" />
+        <img style={size} srcSet={this.props.what} alt="lol" />
       </div>
     );
   }
