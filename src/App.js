@@ -137,7 +137,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="title">
-          <h1>Sky</h1>
+          <div className="git">
+            <h1>Sky</h1>
+            <a class="github-button" href="https://github.com/lucagez/sky" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star lucagez/sky on GitHub">Star</a>
+          </div>
           <button how={35} background={'#2F3939'} value={'gif'} onClick={this.handleClick}>gif 🤣</button>
           <button how={100} background={'#2F3939'} value={'404'} onClick={this.handleClick}>404 💩</button>
           <button how={20} background={'#2F3939'} value={'animals'} onClick={this.handleClick}>animals 🦋</button>

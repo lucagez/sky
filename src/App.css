@@ -14,10 +14,11 @@
   background: #7EA8BE;
   border-radius: 7px;
   padding: 10px;
+  text-align: center;
 }
 
 .title h1 {
-  padding: 30px 60px;
+  padding: 0px 60px;
   text-align: center;
   border-radius: 7px;
   color: #4B666B;
@@ -34,11 +35,17 @@
   cursor: pointer;
 }
 
+.git {
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
 @media screen and (max-width: 500px) {
   .title {
     background: none;
   }
-  .title h1 {
+  .git {
     background: #7EA8BE;
+    border-radius: 7px;
   }
 }
