@@ -8,7 +8,7 @@ class App extends Component {
     this.state = {
       mode: 'space',
       background: '#2F3939',
-      how: 200,
+      how: 100,
     };
     this.handleClick = this.handleClick.bind(this);
   }

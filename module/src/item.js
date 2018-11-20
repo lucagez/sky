@@ -24,10 +24,10 @@ class Item extends React.Component {
       zIndex: '-1',
       transform: movingStyle,
       transition: `transform ${time}s ease-out`,
-      msTransform: movingStyle,
-      msTransition: `transform ${time}s ease-out`,
-      webkitransform: movingStyle,
-      webkitTransition: `transform ${time}s ease-out`,
+      MsTransform: movingStyle,
+      MsTransition: `transform ${time}s ease-out`,
+      Webkitransform: movingStyle,
+      WebkitTransition: `transform ${time}s ease-out`,
       overflow: 'visible',
       willChange: 'transform',
     }
@@ -47,7 +47,7 @@ class Item extends React.Component {
 
     return (
       <div style={style}>
-        <img style={size} srcSet={this.props.what} alt="lol" />
+        <img style={size} srcSet={this.props.what} alt="img" />
       </div>
     );
   }
