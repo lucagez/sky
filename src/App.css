@@ -9,6 +9,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  min-width: 250px;
+  max-width: 25%;
 }
 
 .title h1 {

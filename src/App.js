@@ -10,7 +10,7 @@ class App extends Component {
     this.state = {
       mode: 'space',
       background: '#2F3939',
-      how: 45,
+      how: 65,
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -79,6 +79,12 @@ class App extends Component {
       },
       403: {
         0: 'https://image.flaticon.com/icons/svg/1244/1244031.svg',
+      },
+      500: {
+        0: 'https://image.flaticon.com/icons/svg/155/155275.svg',
+      },
+      503: {
+        0: 'https://image.flaticon.com/icons/svg/1234/1234292.svg',
       }
     }
     return (
@@ -90,12 +96,14 @@ class App extends Component {
           <button how={20} background={'#FCFAF9'} value={'animals'} onClick={this.handleClick}>animals 🦋</button>
           <button how={50} background={'#2F3939'} value={'space'} onClick={this.handleClick}>space 🚀</button>
           <button how={50} background={'#2F3939'} value={'403'} onClick={this.handleClick}>403 🛑</button>
+          <button how={50} background={'#2F3939'} value={'500'} onClick={this.handleClick}>500 😯</button>
+          <button how={50} background={'#2F3939'} value={'503'} onClick={this.handleClick}>503 🤐</button>
         </div>
         <Sky
           images={modes[mode]}
           how={how}
           size={'100px'}
-          time={50}
+          time={30}
           background={background}
         />
       </div>
