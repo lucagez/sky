@@ -18,7 +18,7 @@ $ npm install --save react-sky
 
 ## Usage
 
-```react
+```javascript
 import React, { Component } from 'react';
 import Sky from 'react-sky';
 
@@ -84,7 +84,7 @@ Type: String. Default: 150px
 
 Dimension of the images 
 
-### size
+### background
 
 Type: String. Default: none
 
