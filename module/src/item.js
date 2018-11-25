@@ -1,4 +1,5 @@
-import React from "react"
+import React from 'react'
+import PropTypes from 'prop-types'
 
 class Item extends React.Component {
   constructor(props) {
@@ -17,8 +18,7 @@ class Item extends React.Component {
 
   setStyle() {
     const movingStyle = `translate(${Math.random() * window.innerHeight * 2}px, ${Math.random() * window.innerWidth * 2}px) rotate(${Math.random() * 360}deg)`;
-    const time = this.props.time ? this.props.time : 10;
-    const size = this.props.size ? this.props.size : '150px';
+    const { time, size } = this.props;
     const style = {
       position: 'absolute',
       zIndex: '-1',
@@ -51,6 +51,13 @@ class Item extends React.Component {
       </div>
     );
   }
+}
+
+Item.propTypes = {
+  time: PropTypes.number.isRequired,
+  size: PropTypes.string.isRequired,
+  from: PropTypes.array.isRequired,
+  what: PropTypes.string.isRequired
 }
 
 export default Item;

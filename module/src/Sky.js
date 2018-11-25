@@ -1,5 +1,6 @@
-import React from "react"
-import Item from "./item"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Item from './item'
 
 class Sky extends React.Component {
   constructor(props) {
@@ -38,7 +39,7 @@ class Sky extends React.Component {
   }
 
   render() {
-    const items = this.props.images;
+    const { images, background, size, time } = this.props;
     const outerStyle = {
       position: 'absolute',
       top: '0',
@@ -49,27 +50,42 @@ class Sky extends React.Component {
       padding: '0',
       overflow: 'hidden',
       zIndex: '-1',
-      background: this.props.background ? this.props.background : ''
+      background
     }
 
     return (
       <div style={outerStyle} id="sky">
         {this.state.moves.map((e, i) => {
-          const conditional = Math.floor(Math.random() * Object.keys(items).length);
+          const conditional = Math.floor(Math.random() * Object.keys(images).length);
 
           return <Item
-            what={items[conditional]}
+            what={images[conditional]}
             from={[e.fromX, e.fromY]}
             to={[e.toX, e.toY]}
             rotation={e.rotation}
-            size={this.props.size}
-            time={this.props.time}
+            size={size}
+            time={time}
             key={i}
           />
         })}
       </div>
     );
   }
+}
+
+
+Sky.defaultProps = {
+  size: '150px',
+  background: '',
+  time: 20
+}
+
+Sky.propTypes = {
+  size: PropTypes.string,
+  background: PropTypes.string,
+  time: PropTypes.number,
+  how: PropTypes.number.isRequired,
+  images: PropTypes.object.isRequired
 }
 
 export default Sky;

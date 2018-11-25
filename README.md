@@ -28,9 +28,9 @@ import myImage from "./media/myImage.png"
 class App extends Component {
   render() {
     return (
-      <div> 
+      <div>
         /* Sky adapts size to its container */
-        <Sky 
+        <Sky
           images={{
             /* FORMAT AS FOLLOWS */
             0: "https://linkToYourImage0",  /* You can pass as many images as you want */
@@ -60,17 +60,15 @@ export default App;
 
 ### images
 
-Type: Object. Default: null
+Type: Object. **Required**
 
 **NOTE:** Only one object is allowed to be passed.
 
 ### how
 
-Type: Number. Default: null
+Type: Number. **Required**
 
 Number of images you want to display
-
-**NOTE:** you must pass a number to display your images
 
 ### time
 
@@ -82,13 +80,13 @@ Number of seconds of every single animation
 
 Type: String. Default: 150px
 
-Dimension of the images 
+Dimension of the images
 
 ### background
 
 Type: String. Default: none
 
-Color of the background 
+Color of the background
 
 
 
