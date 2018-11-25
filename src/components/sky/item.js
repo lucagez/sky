@@ -47,7 +47,7 @@ class Item extends React.Component {
 
     return (
       <div style={style}>
-        <img style={size} srcSet={this.props.what} alt="img" />
+        <img style={size} src={this.props.what} alt="" />
       </div>
     );
   }
